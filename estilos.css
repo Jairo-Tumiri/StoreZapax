@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====HEADER===== */
+
+.navegacion-principal img,a{
+    width: 50px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navegacion-principal{
+    padding: 10px 0px 0px;
+    background-color: #000;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+}
+
+.navegacion-principal ul{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.navegacion-principal ul li{
+    font-size: 2.5rem;
+    transition: 0.7s;
+}
+
+.navegacion-principal ul li:hover{
+    padding: 0px 1vw;
+}
+
+/* CUERPO GENERAL */
+main{
+    background-color: #000;
+}
+
+.cuerpo-general h1{
+    padding: 15px 0px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.cuerpo-general .proyectos{
+    margin: 0px 5%;
+    display: grid;
+    grid-template-columns: repeat(2, inherit);
+    grid-auto-rows: 60vh;
+    gap: 20px;
+}
+
+.proyectos .tarjeta{
+    width: inherit;
+    height: inherit;
+    /* background-color: red; */
+    overflow: hidden;
+    position: relative;
+}
+
+.proyectos .tarjeta img{
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    object-fit: cover;
+    object-position: center;
+}
+
+.proyectos .tarjeta img:hover{
+    width: 100%;
+    filter: blur(5px);
+    object-fit: cover;
+    object-position: center;
+}
+
+.tarjeta .texto{
+    text-align: center;
+    padding: 10vh 0px;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    position: absolute;
+    color: #fff;
+    top: 0;
+    transition: 0.5s;
+}
+
+.tarjeta .texto h3{
+    font-size: 4rem;
+}
+
+.tarjeta .texto p{
+    padding: 10px 0px 80px;
+}
+
+.tarjeta .texto a{
+    padding: 10px 10px;
+    background-color: rgba(255, 255, 255, 0.675);
+    color: rgb(0, 0, 0);
+    outline: 6px double rgb(255, 255, 255);
+    transition: 0.7s;
+}
+
+.tarjeta .texto a:hover{
+    background-color: rgba(0, 0, 0, 0.675);
+    color: rgb(255, 255, 255);
+}
+
+.tarjeta .texto:hover{
+    width: 100%;
+    height: 100%;
+    font-size: 1.25rem;
+    background-color: rgba(0, 0, 0, 0.750);
+}
