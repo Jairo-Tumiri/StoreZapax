@@ -1,0 +1,237 @@
+@import url(../../css/predeterminado.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, input, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: var(--color-negro);
+}
+
+aside {
+    padding: 2rem;
+    padding-right: 0;
+    color: var(--color-blanco);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.boton-menu {
+    background-color: transparent;
+    border: 0;
+    color: var(--color-blanco);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    font-size: .85rem;
+    width: 100%;
+}
+
+.boton-menu:hover {
+    background: #fff;
+    color: #000;
+}
+
+.boton-menu.active::before {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    bottom: 100%;
+    right: 0;
+    background-color: transparent;
+    border-bottom-right-radius: .5rem;
+    box-shadow: 0 1rem 0 var(--color-blanco);
+}
+
+.boton-menu.active::after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    top: 100%;
+    right: 0;
+    background-color: transparent;
+    border-top-right-radius: .5rem;
+    box-shadow: 0 -1rem 0 var(--color-blanco);
+}
+
+.boton-menu > i.bi-hand-index-thumb-fill,
+.boton-menu > i.bi-hand-index-thumb {
+    transform: rotateZ(90deg);
+}
+
+.boton-carrito {
+    margin-top: 2rem;
+}
+
+.numerito {
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+    padding: .15rem .25rem;
+    border-radius: .25rem;
+}
+
+.boton-carrito.active .numerito {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+}
+
+.texto-footer {
+    color: var(--color-verdeClaro);
+    font-size: .85rem;
+}
+
+/* ======================================================================================================== */
+/* MAIN */
+
+
+main {
+    background-color: var(--color-blanco);
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 2rem;
+    overflow-y: scroll;
+}
+
+.titulo-principal {
+    color: var(--color-negro);
+    margin-bottom: 1rem;
+}
+
+.contenedor-productos {
+    display: grid;
+    gap: 1rem;
+}
+
+
+/* recent--patients */
+
+.recent--patients {
+    margin-bottom: 20px;
+}
+
+.btn-verde{
+    padding: 10px 10px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.btn-rojo{
+    padding: 5px 10px;
+    font-weight: 900;
+    border: 2px solid #000;
+}
+
+.table {
+    height: 200px;
+    
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+td,
+th {
+    padding-block: 10px;
+    width: 150px;
+}
+/* columnas */
+
+td .col2{
+    overflow: hidden;
+    width: 100px;
+}
+
+/*  */
+
+.edit {
+    color: #007a3f;
+    margin-right: 10px;
+}
+
+.delete {
+    color: #ff2a5b;
+}
+
+
+
+.pending {
+    color: #ffd000;
+}
+
+.confirmed {
+    color: #008947;
+}
+
+.rejected {
+    color: #ff003c;
+}
+
+/* =================== */
+#perfil .datos-perfil{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#estado_seguimiento{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#estado_seguimiento a{
+    width: 200px;
+    height: 200px;
+    background: #ff2a5b;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+}

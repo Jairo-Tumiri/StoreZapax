@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  :root{
+    --color-verdeOscuro: #026d2e;
+    --color-verdeClaro: #47ac71;
+    --color-rojoOscuro: #950000;
+    --color-rojoClaro: #ff2a5b;
+    --color-negro: #000;
+    --color-negroClaro: #111;
+    --color-blanco: #fff;
+  }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* botones */
+
+* .btn-verde{
+    color: #fff;
+    background-color: var(--color-verdeClaro);
+    border-radius: 20px;
+}
+
+* .btn-verde:hover{
+    background-color: var(--color-verdeOscuro);
+}
+
+* .btn-rojo{
+  color: #fff;
+  background-color: var(--color-rojoClaro);
+  border-radius: 20px;
+}
+
+* .btn-rojo:hover{
+  background-color: var(--color-rojoOscuro);
+}
+
+/* LOGO */
+
+* .cont-logo{
+  display: flex;
+  text-align: center;
+  color: rgba(253, 253, 253, 0.9);
+}
+* .cont-logo img{
+  width: 50px;
+}
